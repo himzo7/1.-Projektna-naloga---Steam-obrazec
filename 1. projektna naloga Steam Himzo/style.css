@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column; 
+	background-color: grey;
+	color: #E9E9E9;
+	font-family: "Motiva Sans", sans-serif;
+}
+
+
+.sredina {
+	width: 100%;
+	height: 100%;
+	flex: 0 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 80px;
+	padding-bottom: 150px;
+	background-image: url(slike/bg.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.okvir {
+	
+	border-radius: 6px;
+	padding: 20px 32px;
+	width: 720px;
+	height: 424px;
+}
+
+#signin {
+	padding-left: 17px;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: #181a21;
+	padding: 24px;
+	border-radius: 6px;
+	border: 1px solid #2a2a2a;
+}
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 60%;
+}
+
+.right-side {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 35%;
+}
+
+.sgn, .pswd {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.sgn {
+	color: #1999ff;
+	font-weight: 500;
+}
+
+.pswd {
+	color: #afafaf;
+}
+
+.input-box {
+	width: 100%;
+	height: 36px;
+	border-radius: 2px;
+	background-color: #32353c;
+	border: 1px solid #32353c;
+	color: #fff;
+	padding: 10px;
+	font-size: 15px;
+	outline: none;
+}
+
+.input-box:focus {
+	border-color: #1999ff;
+}
+
+.rememberme {
+	width:397.56px;
+	height: 20px;
+	color: #afafaf;
+	font-size: 12px;
+	user-select: none;
+	margin-top: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: auto;
+	
+}
+
+.checkbox {
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.chckdiv{
+	width: 20px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+.signin {
+	justify-content: center;
+	margin-top: 12px;
+	width: 270px;
+	background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+	border-radius: 2px;
+	border: none;
+	padding: 12px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.signin:hover {
+	opacity: 0.9;
+}
+
+.btnsignin{
+	display: flex;
+	justify-content: center;
+
+}
+
+.help {
+	margin-top: 10px;
+	color: #afafaf;
+	font-size: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+	text-align: center;
+}
+
+.help:hover{
+	color:#d6d6d6;
+}
+
+.qr {
+	width: 189px; 
+	height: 189px;
+	border: 10px solid #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.imgqr {
+	width: 170px;
+	height: 170px;
+}
+
+.underqrtext {
+	font-size: 12px;
+	color: #afafaf;
+	line-height: 1.4;
+}
+
+.underqrtext a {
+	color: #afafaf;
+	text-decoration: underline;
+}
+
+.underqrtext a:hover{
+	color:#d6d6d6;
+}
+
+.upqrtext{
+	width: 189px; 
+	height: 16.89px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #1999ff;
+	font-weight: 500;
+	text-align: left;
+}
+
+
+.noga {
+	background-color: #181a21;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 48px;
+	height: 153px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nogatxt{
+	padding-top:48px;
+	font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.nogaspan{
+	 background: linear-gradient(90deg, #47bfff 5%, #1a44c2 60%) 25%/330% 100%;
+    border-radius: 2px;
+    display: block;
+    box-shadow: 2px 2px 5px #0003;
+}
+
+.creataccnoga{
+	color: #fff;
+    text-shadow: none;
+    padding: 3px 20px;
+	
+    background: 0 0;
+	background: linear-gradient(90deg, #47bfff 5%, #1a44c2 60%) 25%/330% 100%;
+    border-radius: 2px;
+    display: block;
+    box-shadow: 2px 2px 5px #0003;
+	padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+	height:30px;
+	width: 170px;
+}
+
+.headline{
+	width: 145.7px;
+	height: 29px;
+}
+
+.divnoga1{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+	flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+	height: 85px;
+}
