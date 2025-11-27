@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="sl-SI">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../styles/login.css">
+<link rel="icon" type="image/x-icon" href="../photos/social.png">
+<title>Sign In</title>
+</head>
+
+<script src="../js/login.js"></script>
+
+
+<body>
+
+<!-- glava -->
+
+<div class="glava">
+<div class="vsebina-glave">
+
+<div class="logotip">
+<a href="#">
+<img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44" alt="Steam Logo">
+</a>
+</div>
+
+<div class="glavna-navigacija">
+<a class="nav-povezava aktivna" href="#">STORE</a>
+<a class="nav-povezava" href="#">COMMUNITY</a>
+<a class="nav-povezava" href="#">ABOUT</a>
+<a class="nav-povezava" href="#">SUPPORT</a>
+</div>
+
+<div class="uporabniski-meni">
+<a class="gumb-namesti" href="#">
+<span class="vsebina-gumba-namesti">Install Steam</span>
+</a>
+
+<a class="povezava-menija" href="#">login</a>
+&nbsp;
+<span>|</span>
+&nbsp;
+<span class="povezava-menija povezava-jezik">Language</span>
+</div>
+
+</div>
+</div>
+
+<div class="store-meni">
+<div class="store-vsebina">
+
+<nav class="store-nav">
+<a href="#" class="nav-gumb">
+Browse
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Recommendations
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Categories
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Hardware
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Ways to Play
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Special Sections
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+</nav>
+
+<div class="search-div">
+<input type="text" class="search-input" placeholder="Search the Store">
+<button class="search-button">
+<svg viewBox="0 0 18 18"><path d="M13.83 12.08C14.83 10.63 15.26 8.86 15.03 7.11C14.79 5.37 13.92 3.77 12.57 2.64C11.22 1.51 9.49 0.93 7.73 1.01C5.97 1.09 4.31 1.82 3.06 3.07C1.82 4.31 1.09 5.98 1.01 7.74C0.93 9.5 1.51 11.22 2.64 12.58C3.77 13.93 5.36 14.81 7.11 15.04C8.85 15.28 10.62 14.85 12.07 13.84L15.22 17L15.4 16.82L16.82 15.4L17 15.22L13.83 12.08ZM8.04 12.58C7.15 12.58 6.27 12.32 5.53 11.82C4.78 11.32 4.2 10.61 3.86 9.78C3.51 8.96 3.43 8.04 3.6 7.16C3.77 6.29 4.21 5.48 4.84 4.84C5.47 4.21 6.28 3.78 7.16 3.6C8.04 3.43 8.95 3.52 9.78 3.86C10.6 4.2 11.31 4.78 11.81 5.53C12.31 6.28 12.57 7.15 12.57 8.05C12.57 9.25 12.09 10.4 11.24 11.25C10.4 12.1 9.24 12.58 8.04 12.58Z"></path></svg>
+</button>
+</div>
+
+</div>
+</div>
+
+<!---->
+
+<div class="sredina">
+<div class="okvir">
+<form action="">
+
+<div id="signin">Sign in</div>
+
+<div class="prijavni-okvir">
+
+<div class="leva">
+<div class="sgn">SIGN IN WITH ACCOUNT NAME</div>
+<input type="text" class="input-box" required>
+
+<div class="password-container">
+<div class="pswd">PASSWORD</div>
+<input type="password" class="input-box" required>
+<button type="button" class="toggle-password">Show</button>
+</div>
+
+<label class="underqrtext">
+<input type="checkbox" class="checkbox"> Remember me
+</label>
+
+<div class="btnsignin">
+<button type="submit" class="signin">Sign in</button>
+</div>
+
+<a href="#" class="help">Help, I can't sign in</a>
+</div>
+
+<div class="desna">
+<div class="upqrtext">OR SIGN IN WITH QR</div>
+<div class="qr">
+<img src="../photos/download.png" alt="qr" class="imgqr">
+</div>
+<p class="underqrtext">
+Use the <a href="#">Steam Mobile App</a> to sign<br>in via QR code
+</p>
+</div>
+
+</div>
+</form>
+</div>
+</div>
+
+
+
+
+<div class="noga">
+
+<div class="divnoga1">
+<div class="headline">New to Steam?</div>
+<div>
+<a href="register.html" class="nogaspan"><span>Create an account</span></a>
+</div>
+</div>
+
+<div class="noga2">
+<div class="textnoga2">
+<p>It's free and easy. Discover thousands of</br>games to play with millions of new friend.</p>
+<a href="#" class="nogaaboutsteam">Learn more about Steam</a>
+</div>
+</div>
+
+</div>
+
+<!---->
+<footer>
+
+<div class="footer-content">
+
+<div class="line"></div>
+
+<div id="footer-logo-steam">
+<img src="../photos/logo_steam_footer.png" alt="steam logo">
+</div>
+<img src="../photos/footerLogo_valve_new.png" alt="valve">
+
+<div class="footer-text">
+© 2025 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.
+</div>
+
+<div class="footer-text">
+VAT included in all prices where applicable.  
+ &nbsp;  
+<a href="#" target="_blank" rel="">Privacy Policy</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+ <a href="#" target="_blank" rel="">Legal</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Accessibility</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Steam Subscriber Agreement</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Refunds</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Cookies</a>         
+ &nbsp;             
+
+
+</div>
+
+<div class="line"></div>
+
+<div class="footer-valve-links">
+
+<a href="#" target="_blank" rel="">About Valve</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Jobs</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Steamworks</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Steam Distribution</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Support</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Giftcards</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">
+<img src="../photos/ico_facebook.png">
+</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">
+<img src="../photos/ico_twitter.png">
+</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">
+<img src="../photos/ico_bsky.png">
+</a>
+ &nbsp;
+
+
+
+
+</div>
+
+</div>
+
+
+
+</footer>
+</body>
+</html>

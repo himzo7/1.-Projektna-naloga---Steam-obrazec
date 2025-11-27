@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="sl-SI">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/register.css">
+<link rel="icon" type="image/x-icon" href="../photos/social.png">
+<title>Create Your Account</title>
+
+<script defer src="../js/register.js"></script>
+
+</head>
+
+<body>
+<div class="glava">
+<div class="vsebina-glave">
+
+<div class="logotip">
+<a href="#">
+<img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44" alt="Steam Logo">
+</a>
+</div>
+
+<div class="glavna-navigacija">
+<a class="nav-povezava aktivna" href="#">STORE</a>
+<a class="nav-povezava" href="#">COMMUNITY</a>
+<a class="nav-povezava" href="#">ABOUT</a>
+<a class="nav-povezava" href="#">SUPPORT</a>
+</div>
+
+<div class="uporabniski-meni">
+<a class="gumb-namesti" href="#">
+<span class="vsebina-gumba-namesti">Install Steam</span>
+</a>
+<a class="povezava-menija" href="#">login</a>
+&nbsp;
+<span>|</span>
+&nbsp;
+<span class="povezava-menija povezava-jezik">Language</span>
+</div>
+
+</div>
+</div>
+
+<div class="store-meni">
+<div class="store-vsebina">
+
+<nav class="store-nav">
+<a href="#" class="nav-gumb">
+Browse
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a> <!-- viewBox določa kordinatni sistem v SVG;   d=drawing commands, ukaz, ki pove brskalniku kako da nariše svg sliko -->
+
+<a href="#" class="nav-gumb">
+Recommendations
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Categories
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Hardware
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Ways to Play
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+
+<a href="#" class="nav-gumb">
+Special Sections
+<svg viewBox="0 0 12 12"><path d="M5.81 6.36L8.51 3.66L9.69 4.84L5.81 8.72L1.93 4.84L3.11 3.66L5.81 6.36Z"></path></svg>
+</a>
+</nav>
+
+<div class="search-div">
+<input type="text" class="search-input" placeholder="Search the Store">
+<button class="search-button">
+<svg viewBox="0 0 18 18"><path d="M13.83 12.08C14.83 10.63 15.26 8.86 15.03 7.11C14.79 5.37 13.92 3.77 12.57 2.64C11.22 1.51 9.49 0.93 7.73 1.01C5.97 1.09 4.31 1.82 3.06 3.07C1.82 4.31 1.09 5.98 1.01 7.74C0.93 9.5 1.51 11.22 2.64 12.58C3.77 13.93 5.36 14.81 7.11 15.04C8.85 15.28 10.62 14.85 12.07 13.84L15.22 17L15.4 16.82L16.82 15.4L17 15.22L13.83 12.08ZM8.04 12.58C7.15 12.58 6.27 12.32 5.53 11.82C4.78 11.32 4.2 10.61 3.86 9.78C3.51 8.96 3.43 8.04 3.6 7.16C3.77 6.29 4.21 5.48 4.84 4.84C5.47 4.21 6.28 3.78 7.16 3.6C8.04 3.43 8.95 3.52 9.78 3.86C10.6 4.2 11.31 4.78 11.81 5.53C12.31 6.28 12.57 7.15 12.57 8.05C12.57 9.25 12.09 10.4 11.24 11.25C10.4 12.1 9.24 12.58 8.04 12.58Z"></path></svg> <!-- gumb z ikono za iskanje -->
+</button>
+</div>
+
+</div>
+</div>
+	
+<div class="sredina">	
+<div class="glavno">
+<div class="okvir">
+
+<form method="get" id="registerForm">
+
+<div class="crtacc">create your account</div>
+
+<div class="form-div">
+<label class="email-label" for="email">Email address</label>
+<input class="email-input" type="email" id="email"  required name="email">
+
+<!-- warning if the email is invalid-->
+<div class="hidden" id="emailError">
+<svg data-encore-id="icon" role="img" aria-label="Error:" aria-hidden="false"
+class="e-91031-icon e-91031-baseline IconExclamationCircleForText-sc-1lnefk5-0 ryVAU" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-informative-smaller); --encore-icon-width: var(--encore-graphic-size-informative-smaller);">
+<path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"></path>
+<path d="M7.25 9V4h1.5v5zm0 3.026v-1.5h1.5v1.5z"></path></svg>
+<span>This email is invalid. Make sure it's written like example@email.com</span>
+</div>
+</div>
+
+<div class="email">
+<label for="confirmEmail" class="email-label">Confirm your Email</label>
+<input type="text" class="email-input" id="confirmEmail">
+<!-- warning if the confirm email is invalid or mismatch-->
+<div class="hidden" id="confirmError">
+<svg data-encore-id="icon" role="img" aria-label="Error:" aria-hidden="false" class="e-91031-icon e-91031-baseline IconExclamationCircleForText-sc-1lnefk5-0 ryVAU" viewBox="0 0 16 16" style="--encore-icon-height: var(--encore-graphic-size-informative-smaller); --encore-icon-width: var(--encore-graphic-size-informative-smaller);">
+<path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"></path>
+<path d="M7.25 9V4h1.5v5zm0 3.026v-1.5h1.5v1.5z"></path></svg>
+<span>This email is invalid. Make sure it's written like example@email.com</span>
+</div>
+</div>
+
+<div class="email">
+<label for="drzave" class="email-label">Country of Residence</label>
+<select name="drzave" id="drzave">
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Côte d'Ivoire">Côte d'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Grenada">Grenada</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="North Korea">North Korea</option>
+<option value="South Korea">South Korea</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia">Micronesia</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Palestine">Palestine</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia and Montenegro">Serbia and Montenegro</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Vatican City">Vatican City</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+</div>
+
+
+
+<div class="captcha">
+<div class="captcha-leva">
+<input type="checkbox" class="my-checkbox" id="captchaCheckbox">
+<label class="captcha-text" for="captchaCheckbox">I am human</label>
+</div>
+
+<div class="captcha-desna">
+<img src="../photos/captcha.png">
+<div class="logo-text">
+<small class="logo-hcaptcha">hCaptcha</small>
+<small>Privacy - Terms</small>
+</div>
+</div>
+</div>
+
+<div class="okvir-agreement">
+<div class="agreement">
+    <h3>
+      STEAM® SUBSCRIBER AGREEMENT
+    </h3>
+    <br>
+    <p>
+      <a name="0"></a>Table of contents:
+    </p>
+    <ol style="margin-left: 13px;">
+      <li>
+        <a href="#1">Registration as a subscriber;
+application of terms to you; your account; conclusion of
+          agreements</a>
+      </li>
+      <li>
+        <a href="#2">
+          Licenses
+        </a>
+      </li>
+      <li>
+        <a href="#3">
+          Billing, payment and other subscriptions
+        </a>
+      </li>
+      <li>
+        <a href="#4">
+          Online conduct, cheating and automation
+        </a>
+      </li>
+      <li>
+        <a href="#5">
+          Third-party content
+        </a>
+      </li>
+      <li>
+        <a href="#6">
+          User generated content
+        </a>
+      </li>
+      <li>
+        <a href="#7">
+          Disclaimers;
+limitation of liability; no guarantees; limited warranty &amp; agreement
+        </a>
+      </li>
+      <li>
+        <a href="#8">
+          Amendments to this agreement
+        </a>
+      </li>
+      <li>
+        <a href="#9">
+          Term and termination
+        </a>
+      </li>
+      <li>
+        <a href="#10">
+          Applicable law/jurisdiction
+        </a>
+      </li>
+      <li>
+        <a href="#11">
+          Miscellaneous
+        </a>
+      </li>
+    </ol>
+    <p></p>
+
+    <p>
+      This Steam Subscriber Agreement ("Agreement") is a legal document that explains your rights and obligations as a subscriber of Steam from Valve Corporation, a corporation under the laws of the State of Washington, with its registered office at 10400 NE 4th St., Bellevue, WA 98004, United States, registered with the Washington Secretary of State under number 60 22 90 773, VAT ID No. EU 8260 00671 ("Valve").
+      Please read it carefully.
+    </p>
+    <a name="1"></a>
+    <p>1. REGISTRATION AS A SUBSCRIBER;
+APPLICATION OF TERMS TO YOU; YOUR ACCOUNT, ACCEPTANCE OF AGREEMENTS<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      Steam is an online service offered by Valve.
+    </p>
+    <p>
+      You become a subscriber of Steam ("Subscriber") by completing the registration of a Steam user account.
+      This Agreement takes effect as soon as you indicate your acceptance of these terms.
+      You may not become a Subscriber if you are under the age of 13. Steam is not intended for children under 13 and Valve will not knowingly collect personal information from children under the age of 13. Additional age restrictions may apply in your country.
+    </p>
+    <p>
+      A. Contracting Party
+    </p>
+    <p>
+      For any interaction with Steam your contractual relationship is with Valve.
+      Except as otherwise indicated herein or at the time of the transaction (such as in the case of a transaction with another Subscriber in a Subscription Marketplace), any transactions for Subscriptions (as defined below) you make on Steam are being made from Valve.
+    </p>
+    <p>
+      B. Hardware, Subscriptions;
+      Content and Services
+    </p>
+    <p>
+      As a Subscriber you may obtain access to certain services, software and content available to Subscribers or purchase certain Hardware (as defined below) on Steam.
+      The Steam client software and any other software, content, and updates you download or access via Steam, including but not limited to Valve or third-party video games and in-game content, software associated with Hardware and any virtual items you may acquire in a Subscription Marketplace are referred to in this Agreement as "Content and Services;"
+      the rights to access and/or use any Content and Services accessible through Steam are referred to in this Agreement as "Subscriptions."
+    </p>
+    <p>
+      Each Subscription allows you to access particular Content and Services.
+      Some Subscriptions may impose additional terms specific to that Subscription ("Subscription Terms") (for example, an end user license agreement specific to a particular game, or terms of use specific to a particular product or feature of Steam).
+      Also, additional terms (for example, payment and billing procedures) may be posted on <a target="_new" href="http://www.steampowered.com">http://www.steampowered.com</a> or within the Steam service ("Rules of Use").
+      Rules of Use include the Steam Online Conduct Rules <a target="_new" href="http://steampowered.com/index.php?area=online_conduct">http://steampowered.com/index.php?area=online_conduct</a> and the Steam Refund Policy <a target="_new" href="http://store.steampowered.com/steam_refunds">http://store.steampowered.com/steam_refunds</a>.
+      The Subscription Terms, the Rules of Use, and the Valve Privacy Policy (which can be found at <a target="_new" href="http://www.valvesoftware.com/privacy.htm">http://www.valvesoftware.com/privacy.htm</a>) are binding on you once you indicate your acceptance of them or of this Agreement, or otherwise become bound by them as described in Section 8 (Amendments to this Agreement).
+    </p>
+    <p>
+      C. Your Account
+    </p>
+    <p>
+      When you complete Steam’s registration process, you create a Steam account ("Account").
+      Your Account may also include billing information you provide to Valve for transactions concerning Subscriptions, Content and Services and the purchase of any physical goods through Steam (“Hardware”).
+      You may not reveal, share or otherwise allow others to use your password or Account except as otherwise specifically authorized by Valve.
+      You are responsible for the confidentiality of your login and password and for the security of your computer system.
+      Valve is not responsible for the use of your password and Account or for all of the communication and activity on Steam that results from use of your login name and password by you, or by any person to whom you may have intentionally or by negligence disclosed your login and/or password in violation of this confidentiality provision.
+      Unless it results from Valve’s negligence or fault, Valve is not responsible for the use of your Account by a person who fraudulently used your login and password without your permission.
+      If you believe that the confidentiality of your login and/or password may have been compromised, you must notify Valve via the support form (<a target="_new" href="https://support.steampowered.com/newticket.php">https://support.steampowered.com/newticket.php</a>) without any delay.
+    </p>
+    <p>
+      Your Account, including any information pertaining to it (e.g.: contact information, billing information, Account history and Subscriptions, etc.), is strictly personal.
+      You may therefore not sell or charge others for the right to use your Account, or otherwise transfer your Account, nor may you sell, charge others for the right to use, or transfer any Subscriptions other than if and as expressly permitted by this Agreement (including any Subscription Terms or Rules of Use) or as otherwise specifically permitted by Valve.
+      Furthermore, you must not use your Account to enable a violation of this Agreement by others, such as through their commercial use of Steam Content and Services.
+    </p>
+    <p>
+      D. Acceptance of Agreements
+    </p>
+    <p>
+      Your order through Steam is an offer to Valve to agree on the delivery of the ordered Subscriptions, Content and Services and/or Hardware (the “Product(s)”) in exchange for the listed price.
+    </p>
+    <p>
+      When you place an order on Steam, we will send you a message confirming receipt of your order and containing the details of your order (the “Order Confirmation”).
+      The Order Confirmation is acknowledgement that we have received your order and does not confirm acceptance of your offer to enter into an agreement.
+    </p>
+    <p>
+      In the case of Content and Services, we accept your offer, and conclude the agreement with you, by confirming the transaction and making the Content and Services available to you or, in the case of pre-orders, only by confirming the transaction to you and deducting the applicable price from your payment method.
+    </p>
+    <p>
+      In the case of Hardware, we only accept your offer, and conclude the transaction for an item ordered by you, when we dispatch the Hardware to you and send e-mail confirming to you that we've dispatched the Hardware to you (the "Dispatch Confirmation").
+      If your order is dispatched in more than one package, you may receive a separate Dispatch Confirmation for each package, and each Dispatch Confirmation and corresponding dispatch will conclude a separate contract of sale between us for the Hardware specified in that Dispatch Confirmation.
+      Any Hardware delivered to you remains property of Valve until payment has been fully made.
+    </p>
+    <p>
+      You consent to receiving sales invoices electronically.
+    </p>
+    <p>
+      E. Payment Processing
+    </p>
+    <p>
+      Payment processing related to Content and Services and/or Hardware purchased on Steam is performed by either Valve Corporation directly or by Valve’s fully owned subsidiary Valve GmbH on behalf of Valve Corporation depending on the type of payment method used.
+      If your card was issued outside the United States, your payment may be processed via a European acquirer by Valve GmbH on behalf of Valve Corporation.
+      For any other type of purchases, payment will be collected by Valve Corporation directly.
+      In any case, delivery of Content and Services as well as Hardware is performed by Valve Corporation.
+    </p>
+    <a name="2"></a>
+    <p>2.
+LICENSES<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      A. General Content and Services License
+    </p>
+    <p>
+      Steam and your Subscription(s) require the download and installation of Content and Services onto your computer.
+      Valve hereby grants, and you accept, a non-exclusive license and right, to use the Content and Services for your personal, non-commercial use (except where commercial use is expressly allowed herein or in the applicable Subscription Terms).
+      This license ends upon termination of (a) this Agreement or (b) a Subscription that includes the license.
+      The Content and Services are licensed, not sold. Your license confers no title or ownership in the Content and Services.
+      To make use of the Content and Services, you must have a Steam Account and you may be required to be running the Steam client and maintaining a connection to the Internet.
+    </p>
+    <p>
+      For reasons that include, without limitation, system security, stability, and multiplayer interoperability, Valve may need to automatically update, pre-load, create new versions of or otherwise enhance the Content and Services and accordingly, the system requirements to use the Content and Services may change over time.
+    </p>
+    <p>
+      You consent to such automatic updating.
+      You understand that this Agreement (including applicable Subscription Terms) does not entitle you to future updates (unless to the extent required by applicable law), new versions or other enhancements of the Content and Services associated with a particular Subscription, although Valve may choose to provide such updates, etc. in its sole discretion.
+    </p>
+    <p>
+      B. Beta Software License
+    </p>
+    <p>
+      Valve may from time to time make software accessible to you via Steam prior to the general commercial release of such software ("Beta Software").
+      You are not required to use Beta Software, but if Valve offers it, you may elect to use it under the following terms.
+      Beta Software will be deemed to consist of Content and Services, and each item of Beta Software provided will be deemed a Subscription for such Beta Software, with the following provisions specific to Beta Software:
+    </p>
+    <p>
+    </p>
+    <ul>
+      <li>Your right to use the Beta Software may be limited in time, and may be subject to a Subscription Term that includes the time remaining in the beta period until the general commercial release of such software.
+      </li>
+      <li>Valve or any affiliate of Valve, or you, may terminate your right to use the Beta Software at any time, without notice or liability to you.
+      </li>
+      <li>Sections 2.B., 7, and 8 of this Agreement, and any other provisions of this Agreement, Subscription Terms, and the Rules of Use that expressly apply to Beta Software will apply to your use of Beta Software.
+      </li>
+      <li>You will become a Subscriber for the Beta Software automatically upon general commercial release of the software.
+      </li>
+    </ul>
+    <p></p>
+    <p>
+      C. License to Use Valve Developer Tools
+    </p>
+    <p>
+      Your Account may also provide access to certain tools, assets and/or software that can be used to create content and other materials (the "Developer Tools").
+      Developer Tools may include software development kits ("SDKs"), software code, and/or assets that may be used in connection with the creation of applications, extensions, modifications, or other enhancements to games or other software, or other content and materials.
+      The Developer Tools may be made available to you by Valve through the Steam client or through a separate Steamworks site at <a target="_new" href="https://partner.steamgames.com/">https://partner.steamgames.com/</a> or from another third-party provider. Valve is not obligated to provide access to Developer Tools.
+    </p>
+    <p>
+      Certain Developer Tools will be distributed with separate Subscription Terms that are different from the rules set forth in this Section.
+      Otherwise, the following rules apply to your use of the Developer Tools.
+    </p>
+    <p>
+      Valve hereby grants you a limited, revocable, personal, non-transferable, non-sublicensable, non-exclusive license to use the Developer Tools solely for your internal development of materials for use with the Content and Services ("Developed Content"), and to upload, distribute and/or make available to end users such Developed Content as permitted herein or in any Subscription Terms.
+      No other use of the Developer Tools is permitted.
+      The Developer Tools are licensed, not sold. Your license confers no title or ownership in the Developer Tools.
+    </p>
+    <p>
+      Certain Developer Tools may allow you to create offerings for retail sale.
+      If this is permitted under the applicable Subscription Terms, Valve hereby grants you a non-exclusive license to distribute such offerings to end users, except that distribution will be controlled by the Subscription Terms.
+    </p>
+    <p>
+      Developed Content may be made available to end users for free or for a fee.
+      If Developed Content is distributed for a fee, you and Valve shall enter into a separate agreement governing the payment for and distribution of such Developed Content.
+      The separate agreement may be entered into through the Steamworks site.
+      You agree that in the event of any inconsistency between such separate agreement and this Agreement, the terms of this Agreement shall prevail, unless such separate agreement expressly amends this Agreement.
+    </p>
+    <p>
+      D. License to Use Valve Dedicated Server Software
+    </p>
+    <p>
+      Your Subscription(s) may contain access to the Valve Dedicated Server Software.
+      If so, you may use the Valve Dedicated Server Software on an unlimited number of computers for the purpose of hosting online multiplayer games of Valve products.
+      If you wish to operate the Valve Dedicated Server Software, you will be solely responsible for procuring any Internet access, bandwidth, or hardware for such activities and will bear all costs associated therewith.
+    </p>
+    <p>
+      E. Ownership
+    </p>
+    <p>
+      All title, ownership rights and intellectual property rights in and to the Content and Services and any and all copies thereof, are owned by Valve and/or its affiliates or its or their licensors.
+      All rights are reserved, except as expressly stated herein.
+      The Content and Services are protected by copyright laws, international copyright treaties and conventions and other laws.
+      The Content and Services contain certain licensed materials and Valve’s and its affiliates’ or its and their licensors may protect their rights in the event of any violation of this Agreement.
+    </p>
+    <p>
+      F. Restrictions
+    </p>
+    <p>
+      You agree to the following restrictions in this Section 2.F. unless, and then only to the extent that, a specific restriction is expressly prohibited by applicable mandatory law.
+    </p>
+    <p>
+      You may not use the Content and Services for any purpose other than the permitted access to Steam and your Subscriptions, and to make personal, non-commercial use of your Subscriptions, except as otherwise expressly permitted by this Agreement or applicable Subscription Terms.
+      Except as otherwise expressly set forth in this Agreement or the applicable Subscription Terms, you may not, in whole or in part: copy, photocopy, reproduce, publish, distribute, translate, reverse engineer, derive source code from, modify, disassemble, decompile, create a source port of, create derivative works based on, sell, rent, lease, sublicense, or in any way commercially exploit, the Content and Services; remove any proprietary notices or labels on the Content and Services; or otherwise use the Content and Services except as permitted by this Section.
+      For example, you may not: (i) use cheats, automation software (bots), mods, hacks, or any other unauthorized third-party software designed to modify the Content and Services; (ii) use the Content and Services in connection with any product that includes any other unauthorized third-party software that intercepts, "mines", or otherwise collects information from or through the Content and Services; or (iii) except as permitted under Section 2.C., host, provide or develop matchmaking services for the Content and Services, or intercept, emulate or redirect the communication protocols used by Valve in any way, for any purpose, including without limitation unauthorized play over the internet, network play (except as expressly authorized by Valve), or as part of content aggregation networks.
+    </p>
+    <p>
+      You may not use the Content and Services in any manner that may impair any part of the Content and Services or any user's enjoyment thereof, or otherwise violate the applicable Subscription Terms or Rules of Use.
+    </p>
+    <p>
+      You may not interfere with or attempt to disable any security, digital rights management, or anti-cheat technologies or components in the Content and Services.
+    </p>
+    <p>
+      You may not remove, circumvent, disable, damage or otherwise interfere with any part of the Content and Services, including any security-related features, features that prevent or restrict use or copying of any part of the Content and Services, or features that enforce limitations on use of the Content and Services.
+    </p>
+    <p>
+      The foregoing applies to all parts of the Content and Services, including but not limited to any components, content, or other materials or services that are made available to you as a separate download or through the use of another product, such as the Steamworks SDK.
+    </p>
+    <p>
+      G. Third-Party Ownership
+    </p>
+    <p>
+      If you are using the Content and Services on a device owned by a third party, you acknowledge and agree that such third party may have access to all of your data and personal information on the device, and Valve has no responsibility or liability with respect to such third party access, regardless of your relationship with such third party or whether you have knowledge of or consent to such access.
+    </p>
+    <a name="3"></a>
+    <p>3.
+BILLING, PAYMENT AND OTHER SUBSCRIPTIONS<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      ALL CHARGES INCURRED ON STEAM, AND ALL PURCHASES MADE WITH THE STEAM WALLET, ARE PAYABLE IN ADVANCE AND ARE NOT REFUNDABLE IN WHOLE OR IN PART, REGARDLESS OF THE PAYMENT METHOD, EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT AND THE STEAM REFUND POLICY <a target="_new" href="http://store.steampowered.com/steam_refunds">http://store.steampowered.com/steam_refunds</a>.
+    </p>
+    <p>
+      A. Steam Wallet
+    </p>
+    <p>
+      Steam may make available an account balance associated with your Account (the "Steam Wallet").
+      The Steam Wallet is neither a bank account nor any kind of payment instrument.
+      It functions as a prepaid balance to purchase Content and Services.
+      You may place funds in your Steam Wallet up to a maximum amount determined by Valve, by credit card, prepaid card, promotional code, or any other payment method accepted by Steam.
+      Within any twenty-four (24) hour period, the total amount stored in your Steam Wallet plus the total amount spent out of your Steam Wallet, in the aggregate, may not exceed US$2,000 or its equivalent in your applicable local currency -- attempted deposits into your Steam Wallet that exceed this threshold may not be credited to your Steam Wallet until your activity falls below this threshold.
+      Valve may change or impose different Steam Wallet balance and usage limits from time to time.
+    </p>
+    <p>
+      You will be notified by e-mail of any change to the Steam Wallet balance and usage limits within sixty (60) days before the entry into force of the change.
+      Your continued use of your Steam Account more than thirty (30) days after the entry into force of the changes will constitute your acceptance of the changes.
+      If you don’t agree to the changes, your only remedy is to terminate your Steam Account or to cease use of your Steam Wallet.
+      Valve shall not have any obligation to refund any credits remaining on your Steam Wallet in this case.
+    </p>
+    <p>
+      You may use Steam Wallet funds to purchase Subscriptions, including by making in-game purchases where Steam Wallet transactions are enabled, and Hardware.
+      Subject to Section 3.I, funds added to the Steam Wallet are non-refundable and non-transferable.
+      Steam Wallet funds do not constitute a personal property right, have no value outside Steam and can only be used to purchase Subscriptions and related content via Steam (including but not limited to games and other applications offered through the Steam Store, or in a Steam Subscription Marketplace) and Hardware.
+      Steam Wallet funds have no cash value and are not exchangeable for cash.
+      Steam Wallet funds that are deemed unclaimed property may be turned over to the applicable authority.
+    </p>
+    <p>
+      B. Pricing and Payment
+    </p>
+    <p>
+      Valve reserves the right to change the prices and fees for the Subscriptions at any time, and Subscriptions may be discontinued or otherwise unavailable at any time.
+    </p>
+    <p>
+      You agree that Valve is not required to provide a refund for any reason except as required by applicable law that cannot be waived, and that Valve is not required to provide a refund for any Subscription that you purchase, except as otherwise provided in this Agreement and the Steam Refund Policy.
+    </p>
+    <p>
+      If your Account, or a particular Subscription, is terminated or cancelled because you have violated this Agreement or any applicable Subscription Terms, no refund, including of any Subscription fees or of any unused funds in your Steam Wallet, will be granted.
+    </p>
+    <p>
+      If you are a Steam subscriber in a territory other than the EU or UK, sales tax may apply to your purchases ( "Taxes" ).
+      In some cases your transaction may be subject to foreign transaction fees or other fees applied by your bank or card issuer, which are not reflected in the price shown to you on Steam.
+    </p>
+    <p>
+      C. Online Stores Other Than Steam
+    </p>
+    <p>
+      You may purchase Subscriptions from an authorized reseller of Valve.
+      The purchase terms presented to you by such authorized reseller will govern your purchase.
+      Your legal relationship in that case will be with the reseller only.
+      You must refer to the sales conditions of such reseller to determine your rights of withdrawal.
+      Valve is not obliged to provide any withdrawal right for purchases made outside of Steam, but if you purchase Subscriptions directly from Valve and the Content and Services are to be delivered in a tangible medium (e.g., on DVDs or other data storage devices), you may withdraw from your purchase until the time of delivery of your Subscription.
+      For any other purchases of Subscriptions from Valve, you are required to indicate your acceptance of this Agreement, and therefore to waive any right of withdrawal, at the time of purchase.
+      If you are a consumer located in the European Union or United Kingdom, the Steam Refund Policy will apply instead.
+    </p>
+    <p>
+      Valve cannot provide direct refund support for purchases made outside of Steam.
+      However, if you obtain a refund from an authorized reseller of Valve in compliance with this Section 3.C, Valve will cancel the relevant Subscriptions.
+    </p>
+    <p>
+      D. Recurring Billing
+    </p>
+    <p>
+      Your Subscriptions may include access to Content and Services that are provided to you on an ongoing basis, such as an in-game item or a regularly updated online service ( "Recurring Content Subscriptions" ).
+      If you purchase a Recurring Content Subscription, your Steam Wallet will be billed for the cost of the initial Subscription, and will continue to be automatically billed on a recurring basis unless and until you cancel your Recurring Content Subscription.
+      You may cancel a Recurring Content Subscription at any time.
+      You will continue to have access to the Recurring Content Subscription through the end of any paid billing period.
+    </p>
+    <p>
+      Billing cycles for Recurring Content Subscriptions will be aligned to a monthly or annual basis, as specified at the time of purchase.
+      If a Recurring Content Subscription is available only for a set number of months, it will expire at the end of that period.
+    </p>
+    <p>
+      E. Free Subscriptions
+    </p>
+    <p>
+      In some cases, Valve may offer a free Subscription to certain third-party services and/or to certain third-party Content and Services.
+      The term "free Subscription" means a Subscription that is provided to you without additional charge.
+      Use of a free Subscription is subject to the terms and conditions of this Agreement and the applicable Subscription Terms.
+      Free Subscriptions may not be transferred.
+      The free Subscription can be revoked immediately by Valve if (a) Valve elects to discontinue the free Subscription for all Subscribers, or (b) you breach any term or condition of this Agreement, any of the Subscription Terms or the Rules of Use.
+      Revocation of a free Subscription will not entitle you to any refund for any paid Subscriptions associated with the free Subscription.
+    </p>
+    <p>
+      F. Third Party Sites
+    </p>
+    <p>
+      The Steam client includes one or more components or features that provide access from within the Steam client to certain third party Internet sites ( "Third Party Sites" ).
+      The Third Party Sites are not under the control of Valve, and Valve is not responsible for the content of any Third Party Sites, including without limitation any link contained in Third Party Sites, or any changes or updates to Third Party Sites.
+      Valve is not responsible for any form of transmission received from any Third Party Sites.
+      Your access from within the Steam client to Third Party Sites is provided solely for your convenience.
+    </p>
+    <p>
+      G. Promotional Codes
+    </p>
+    <p>
+      Valve or third parties may provide you with a promotional code that is redeemable for access to a third party feature or a third party Subscription ( "Promotional Code" ).
+      Promotional Codes have no cash value and may not be transferred or exchanged for cash.
+      Promotional Codes may be subject to additional terms and conditions that you must accept prior to redemption.
+      Promotional Codes may expire or be revoked at any time.
+    </p>
+    <p>
+      H. Gift Subscriptions
+    </p>
+    <p>
+      You may purchase a Gift Subscription for an Account owned by another Steam user.
+      The Account to which a Gift Subscription is requested will be notified and provided with the opportunity to accept or decline the Gift Subscription.
+      If the Gift Subscription is declined, a refund will be issued to the original purchaser.
+    </p>
+    <p>
+      I. Steam Vouchers and Gift Cards
+    </p>
+    <p>
+      You may receive a physical voucher or card (including an electronic card or certificate) issued by or on behalf of Valve that is redeemable for Steam Wallet funds ( "Steam Voucher" ).
+      Steam Vouchers may be distributed with or without payment or other consideration (e.g., as a promotional item or as a digital or physical gift card).
+      A Steam Voucher may be redeemed on Steam only for Steam Wallet credit, which may be used for purchases of Subscriptions in accordance with this Agreement.
+      Steam Vouchers may not be redeemed for cash or credit, except as required by applicable law.
+      Steam Vouchers are not transferrable and may not be resold or exchanged, except as expressly permitted by Valve.
+      Steam Vouchers may be subject to additional terms and conditions presented to you at the time of purchase or receipt.
+      For information on redeeming Steam Vouchers, see <a target="_new" href="http://store.steampowered.com/steamwallet">http://store.steampowered.com/steamwallet</a>.
+    </p>
+    <a name="4"></a>
+    <p>4.
+ONLINE CONDUCT, CHEATING AND ILLEGAL BEHAVIOR<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      Your online conduct and interaction with other Subscribers should be guided by common sense and basic etiquette.
+      Specific requirements apply to the game play, chat, and other Subscriber-created content features within Steam.
+      They are available for your review under the Rules of Use linked to this Agreement.
+    </p>
+    <p>
+      You acknowledge and agree that Valve, its licensors and licensees, and other Subscribers have the proprietary rights in their respective Content and Services.
+      You and other Subscribers may not use the Content and Services in connection with any business or for any commercial purpose without the express prior written agreement of Valve, except as expressly permitted by this Agreement or the applicable Subscription Terms.
+    </p>
+    <p>
+      You agree that you will not use the Content and Services to violate any applicable law or regulation, including without limitation any third party intellectual property, publicity, or privacy rights.
+    </p>
+    <p>
+      Depending on your Subscription, your interaction with the Content and Services available on Steam may be governed by separate Subscription Terms and/or a separate end user license agreement ( "EULA" ).
+      In the event that your conduct is governed by a separate EULA, you agree that you will abide by the terms of the EULA as well as this Agreement.
+      In the event of any conflict between an EULA and this Agreement, the terms of this Agreement shall prevail unless the EULA expressly overrides this Agreement.
+    </p>
+    <p>
+      Valve reserves the right, but is not obligated, to monitor or record your interaction with the Content and Services, including without limitation any online chat features (text or voice), and may share such information with law enforcement or other third parties as provided in the Valve Privacy Policy.
+    </p>
+    <a name="5"></a>
+    <p>5.
+THIRD-PARTY CONTENT<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      In regard to all Subscriptions, Contents and Services that are not authored by Valve, Valve does not screen such third-party content available on Steam or through other sources.
+      Valve assumes no responsibility or liability for such third party content, unless to the extent provided by mandatory law.
+      Some third-party application software is capable of being used by businesses for business purposes - however, you may only acquire such software via Steam for private personal use.
+    </p>
+    <a name="6"></a>
+    <p>6.
+USER GENERATED CONTENT<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      A. General Provisions
+    </p>
+    <p>
+      Steam provides interfaces and tools for you to be able to generate content and make it available to other users and/or to Valve at your sole discretion.
+      "User Generated Content" means any content you make available to other users through your use of multi-user features of Steam, or to Valve or its affiliates through your use of the Content and Services or otherwise.
+    </p>
+    <p>
+      When you upload your content to Steam to make it available to other users and/or to Valve, you grant Valve and its affiliates the worldwide, non-exclusive right to use, reproduce, modify, create derivative works from, distribute, transmit, transcode, translate, broadcast, and otherwise communicate, and publicly display and publicly perform, your User Generated Content, and derivative works of your User Generated Content, for the purpose of the operation, distribution, incorporation as part of and promotion of the Steam service, Steam games or other Steam offerings, including Subscriptions.
+      This license is granted to Valve as the content is uploaded on Steam for the entire duration of the intellectual property rights.
+      It may be terminated if Valve is in breach of the license and has not cured such breach within fourteen (14) days from receiving notice from you sent to the attention of the Valve Legal Department at the applicable Valve address noted on this <a target="new" style="text-decoration:underline;"
+      href="http://store.steampowered.com/privacy_agreement/">Privacy Policy</a> page. The termination of said license does not affect the rights of any sub-licensees pursuant to any sub-license granted by Valve prior to termination of the license.
+      Valve is the sole owner of the derivative works created by Valve from your User Generated Content, and is therefore entitled to grant licenses on these derivative works.
+      If you use Valve cloud storage, you grant us a license to store your information as part of that service.
+      Valve may place limits on the amount of storage you may use.
+    </p>
+    <p>
+      If you provide Valve with any feedback or suggestions about Steam, the Content and Services, or any Valve products, Hardware or services, Valve is free to use the feedback or suggestions however it chooses, without any obligation to account to you.
+    </p>
+    <p>
+      You agree that the User Generated Content you upload on Steam through the interfaces and tools provided by Valve is given significant exposure and that you share it for your enjoyment and for the recognition you may receive from other Subscribers.
+      Consequently, you grant this license to Valve and its affiliates for free, notwithstanding any other contrary terms provided in App-Specific Terms, as defined under Section 6.B below.
+    </p>
+    <p>
+      B. Content Uploaded to the Steam Workshop
+    </p>
+    <p>
+      Some games or applications available on Steam ("Workshop-Enabled Apps") allow you to create User Generated Content based on or using the Workshop-Enabled App, and to submit that User Generated Content (a “Workshop Contribution”) to one or more Steam Workshop web pages.
+      Workshop Contributions can be viewed by the Steam community, and for some categories of Workshop Contributions users may be able to interact with, download or purchase the Workshop Contribution.
+      In some cases, Workshop Contributions may be considered for incorporation by Valve or a third-party developer into a game or into a Subscription Marketplace.
+    </p>
+    <p>
+      You understand and agree that Valve is not obligated to use, distribute, or continue to distribute copies of any Workshop Contribution and reserves the right, but not the obligation, to restrict or remove Workshop Contributions for any reason.
+    </p>
+    <p>
+      Specific Workshop-Enabled Apps or Workshop web pages may contain special terms (“App-Specific Terms”) that supplement or change the terms set out in this Section to reflect the individual requirements of the Workshop-Enabled App in question.
+    </p>
+    <p>Under Section 6.A, Workshop Contributions are in principle made available to Subscribers for free.
+      By way of exception, they may be made available to Subscribers for a fee.
+      In that case, the way the revenues generated may be shared, and in particular, the compensation you may receive as a result of this making available, are defined in the App-Specific Terms and not by this Agreement.
+      Unless otherwise specified in App-Specific Terms (if any), the following general rules apply to Workshop Contributions.
+    </p>
+    <p>
+    </p>
+    <ul>
+      <li>Workshop Contributions are Subscriptions, and therefore you agree that any Subscriber receiving distribution
+        of your Workshop Contribution will have the same rights to use your Workshop Contribution (and will be subject
+        to the same restrictions) as are set out in this Agreement for any other Subscriptions.
+        <br>
+      </li>
+      <li>Notwithstanding the license described in Section 6.A, Valve will only have the right to modify including to
+        create derivative works from your Workshop Contribution in the following cases: (a) Valve may make modifications
+        necessary to make your Contribution compatible with Steam and the Workshop functionality or user interface, and
+        (b) Valve or the applicable developer may make modifications to Workshop Contributions that are accepted for
+        in-Application distribution as it deems necessary or desirable to enhance gameplay or make it compatible with
+        the Workshop-Enabled App.
+        Under Section 6.A, you grant for free to Valve and its affiliates the right to modify,
+        including to create derivative works from, your Workshop Contribution.
+        As a result, you are not entitled to any
+        compensation from Valve as a result of Valve’s modifications.
+      </li>
+      <li>You may, in your sole discretion, choose to remove a Workshop Contribution from the applicable Workshop pages.
+        If you do so, Valve will no longer have the right to use, distribute, transmit, communicate, publicly display or
+        publicly perform the Workshop Contribution, except that (a) Valve may continue to exercise these rights for any
+        Workshop Contribution that is accepted for distribution in-game or distributed in a manner that allows it to be
+        used in-game, and (b) your removal will not affect the rights of any Subscriber who has already obtained access
+        to a copy of the Workshop Contribution.
+      </li>
+    </ul>
+    <p></p>
+    <p>
+      C. Promotions and Endorsements
+    </p>
+    <p>
+      If you use Steam services (e.g. the Steam Curators’ Lists or the Steam Broadcasting service) to promote or endorse a product, service or event in return for any kind of consideration from a third party (including non-monetary rewards such as free games), you must clearly indicate the source of such consideration to your audience.
+    </p>
+    <p>
+      D. Representations and Warranties
+    </p>
+    <p>
+      You represent and warrant to us that you have sufficient rights in all User Generated Content to grant Valve and other affected parties the licenses described under A. and B. above or in any license terms specific to the applicable Workshop-Enabled App or Workshop page.
+      This includes, without limitation, any kind of intellectual property rights or other proprietary or personal rights affected by or included in the User Generated Content.
+      In particular, with respect to Workshop Contributions, you represent and warrant that the Workshop Contribution was originally created by you (or, with respect to a Workshop Contribution to which others contributed besides you, by you and the other contributors, and in such case that you have the right to submit such Workshop Contribution on behalf of those other contributors).
+    </p>
+    <p>
+      You furthermore represent and warrant that the User Generated Content, your submission of that Content, and your granting of rights in that Content does not violate any applicable contract, law or regulation.
+    </p>
+    <a name="7"></a>
+    <p>7. DISCLAIMERS; LIMITATION OF LIABILITY; NO GUARANTEES; LIMITED WARRANTY &amp;
+AGREEMENT<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      THIS SECTION 7 DOES NOT APPLY TO EU OR UK SUBSCRIBERS.
+    </p>
+    <p>
+    </p>
+    <ul>
+      <li>FOR AUSTRALIAN SUBSCRIBERS, THIS SECTION 7 DOES NOT EXCLUDE, RESTRICT OR MODIFY THE APPLICATION OF ANY
+        GUARANTEE, RIGHT OR REMEDY THAT CANNOT BE SO EXCLUDED, RESTRICTED OR MODIFIED, INCLUDING THOSE CONFERRED BY THE
+        AUSTRALIAN CONSUMER LAW (ACL).
+        UNDER THE ACL, GOODS COME WITH GUARANTEES INCLUDING A GUARANTEE THAT GOODS ARE OF
+        ACCEPTABLE QUALITY.
+        IF THERE IS A FAILURE OF THIS GUARANTEE, YOU ARE ENTITLED TO A REMEDY (WHICH MAY INCLUDE
+        HAVING THE GOODS REPAIRED OR REPLACED OR A REFUND).
+        IF A REPAIR OR REPLACEMENT CANNOT BE PROVIDED OR THERE IS A
+        MAJOR FAILURE, YOU ARE ENTITLED TO A REFUND.</li>
+      <li>FOR NEW ZEALAND SUBSCRIBERS, THIS SECTION 7 DOES NOT EXCLUDE, RESTRICT OR MODIFY THE APPLICATION OF ANY RIGHT
+        OR REMEDY THAT CANNOT BE SO EXCLUDED, RESTRICTED OR MODIFIED INCLUDING THOSE CONFERRED BY THE NEW ZEALAND
+        CONSUMER GUARANTEES ACT 1993. UNDER THIS ACT ARE GUARANTEES WHICH INCLUDE THAT GOODS AND SERVICES ARE OF
+        ACCEPTABLE QUALITY. IF THIS GUARANTEE IS NOT MET THERE ARE ENTITLEMENTS TO HAVE THE SOFTWARE REMEDIED (WHICH MAY
+        INCLUDE REPAIR, REPLACEMENT OR REFUND).
+        IF A REMEDY CANNOT BE PROVIDED OR THE FAILURE IS OF A SUBSTANTIAL
+        CHARACTER, THE ACT PROVIDES FOR A REFUND.</li>
+    </ul>
+    <p></p>
+    <p>
+      Prior to acquiring a Subscription, you should consult the product information made available on Steam, including Subscription description, minimum technical requirements, and user reviews.
+    </p>
+    <p>
+      A. DISCLAIMERS
+    </p>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VALVE AND ITS AFFILIATES AND SERVICE PROVIDERS EXPRESSLY DISCLAIM (I) ANY WARRANTY FOR STEAM, THE CONTENT AND SERVICES, AND THE SUBSCRIPTIONS, AND (II) ANY COMMON LAW DUTIES WITH REGARD TO STEAM, THE CONTENT AND SERVICES, AND THE SUBSCRIPTIONS, INCLUDING DUTIES OF LACK OF NEGLIGENCE AND LACK OF WORKMANLIKE EFFORT.
+      STEAM, THE CONTENT AND SERVICES, THE SUBSCRIPTIONS, AND ANY INFORMATION AVAILABLE IN CONNECTION THEREWITH ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, "WITH ALL FAULTS" AND WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT.
+      ANY WARRANTY AGAINST INFRINGEMENT THAT MAY BE PROVIDED IN SECTION 2-312 OF THE UNITED STATES UNIFORM COMMERCIAL CODE AND/OR IN ANY OTHER COMPARABLE STATE STATUTE IS EXPRESSLY DISCLAIMED.
+      ALSO, THERE IS NO WARRANTY OF TITLE, NON-INTERFERENCE WITH YOUR ENJOYMENT, OR AUTHORITY IN CONNECTION WITH STEAM, THE CONTENT AND SERVICES, THE SUBSCRIPTIONS, OR INFORMATION AVAILABLE IN CONNECTION THEREWITH.
+    </p>
+    <p>
+      ANY WARRANTY AGAINST INFRINGEMENT THAT MAY BE PROVIDED IN SECTION 2-312 OF THE UNITED STATES UNIFORM COMMERCIAL CODE IS EXPRESSLY DISCLAIMED.
+    </p>
+    <p>
+      B. LIMITATION OF LIABILITY
+    </p>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER VALVE, ITS LICENSORS, NOR THEIR AFFILIATES, NOR ANY OF VALVE’S SERVICE PROVIDERS, SHALL BE LIABLE IN ANY WAY FOR LOSS OR DAMAGE OF ANY KIND RESULTING FROM THE USE OR INABILITY TO USE STEAM, YOUR ACCOUNT, YOUR SUBSCRIPTIONS AND THE CONTENT AND SERVICES INCLUDING, BUT NOT LIMITED TO, LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES 
+      OR LOSSES. IN NO EVENT WILL VALVE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE OR EXEMPLARY DAMAGES, OR ANY OTHER DAMAGES ARISING OUT OF OR IN ANY WAY CONNECTED WITH STEAM, THE CONTENT AND SERVICES, THE SUBSCRIPTIONS, AND ANY INFORMATION AVAILABLE IN CONNECTION THEREWITH, OR THE DELAY OR INABILITY TO USE THE CONTENT AND SERVICES, SUBSCRIPTIONS OR ANY INFORMATION, EVEN IN THE EVENT OF VALVE’S OR ITS AFFILIATES’ FAULT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR BREACH OF VALVE’S WARRANTY AND EVEN IF IT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+      THESE LIMITATIONS AND LIABILITY EXCLUSIONS APPLY EVEN IF ANY REMEDY FAILS TO PROVIDE ADEQUATE RECOMPENSE.
+    </p>
+    <p>
+      BECAUSE SOME STATES OR JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR THE LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, IN SUCH STATES OR JURISDICTIONS, EACH OF VALVE, ITS LICENSORS, AND ITS AFFILIATES’ LIABILITY SHALL BE LIMITED TO THE FULL EXTENT PERMITTED BY LAW.
+    </p>
+    <p>
+      C. NO GUARANTEES
+    </p>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, NEITHER VALVE NOR ITS AFFILIATES GUARANTEE CONTINUOUS, ERROR-FREE, VIRUS-FREE OR SECURE OPERATION AND ACCESS TO STEAM, THE CONTENT AND SERVICES, YOUR ACCOUNT AND/OR YOUR SUBSCRIPTION(S) OR ANY INFORMATION AVAILABLE IN CONNECTION THEREWITH.
+    </p>
+    <p>
+      D. LIMITED WARRANTY &amp;
+      AGREEMENT
+    </p>
+    <p>
+      CERTAIN HARDWARE PURCHASED FROM VALVE IS SUBJECT TO A LIMITED WARRANTY &amp;
+      AGREEMENT, [OR DEPENDING ON YOUR LOCATION, A STATUTORY WARRANTY] WHICH IS DESCRIBED IN DETAIL <a style="text-decoration:underline;" href="https://support.steampowered.com/kb_article.php?ref=4577-TUJV-6223">HERE</a>.
+    </p>
+    <a name="8"></a>
+    <p>8.
+AMENDMENTS TO THIS AGREEMENT<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      PLEASE NOTE: If you are a consumer with place of residence in Germany, a different version of Section 8 applies to you, which is available <a style="text-decoration:underline;"
+      href="http://store.steampowered.com/subscriber_agreement_de/">here</a>.
+    </p>
+    <p>
+      A. Mutual Amendment
+    </p>
+    <p>
+      This Agreement may at any time be mutually amended by your explicit consent to changes proposed by Valve.
+    </p>
+    <p>
+      B. Unilateral Amendment
+    </p>
+    <p>
+      Furthermore, Valve may amend this Agreement (including any Subscription Terms or Rules of Use) unilaterally at any time in its sole discretion.
+      In this case, you will be notified by e-mail of any amendment to this Agreement made by Valve at least 30 (30) days before the effective date of the amendment.
+      You can view the Agreement at any time at <a target="_new" href="http://www.steampowered.com/">http://www.steampowered.com/</a>.
+      Your failure to cancel your Account prior to the effective date of the amendment will constitute your acceptance of the amended terms.
+      If you don’t agree to the amendments or to any of the terms in this Agreement, your only remedy is to cancel your Account or to cease use of the affected Subscription(s).
+      Valve shall not have any obligation to refund any fees that may have accrued to your Account before cancellation of your Account or cessation of use of any Subscription, nor shall Valve have any obligation to prorate any fees in such circumstances.
+    </p>
+    <a name="9"></a>
+    <p>9.
+TERM AND TERMINATION<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      A. Term
+    </p>
+    <p>
+      The term of this Agreement (the "Term") commences on the date you first indicate your acceptance of these terms, and will continue in effect until otherwise terminated in accordance with this Agreement.
+    </p>
+    <p>
+      B. Termination by You
+    </p>
+    <p>
+      You may cancel your Account at any time.
+      You may cease use of a Subscription at any time or, if you choose, you may request that Valve terminate your access to a Subscription.
+      However, Subscriptions are not transferable, and even if your access to a Subscription for a particular game or application is terminated, the original activation key will not be able to be registered to any other account, even if the Subscription was obtained in a retail store.
+      Access to Subscriptions ordered as a part of a pack or bundle cannot be terminated individually, termination of access to one game within the bundle will result in termination of access to all games ordered in the pack.
+      Your cancellation of an Account, or your cessation of use of any Subscription or request that access to a Subscription be terminated, will not entitle you to any refund, including of any Subscription fees.
+      Valve reserves the right to collect fees, surcharges or costs incurred prior to the cancellation of your Account or termination of your access to a particular Subscription.
+      In addition, you are responsible for any charges incurred to third-party vendors or content providers before your cancellation.
+    </p>
+    <p>
+      C. Termination by Valve
+    </p>
+    <p>
+      Valve may restrict or cancel your Account or any particular Subscription(s) at any time in the event that (a) Valve ceases providing such Subscriptions to similarly situated Subscribers generally, or (b) you breach any terms of this Agreement (including any Subscription Terms or Rules of Use).
+      In the event that your Account or a particular Subscription is restricted or terminated or cancelled by Valve for a violation of this Agreement or improper or illegal activity, no refund, including of any Subscription fees or of any unused funds in your Steam Wallet, will be granted.
+    </p>
+    <p>
+      D. Survival of Terms
+    </p>
+    <p>
+      Sections 2.C., 2.D., 2.F., 2.G., 3.A., 3.B., 3.D., 3.H., and 5 - 11 will survive any expiration or termination of this Agreement.
+    </p>
+    <a name="10"></a>
+    <p>10.
+APPLICABLE LAW/JURISDICTION<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      Most user concerns can be resolved by use of our Steam support site at <a target="_new" href="https://support.steampowered.com/">https://support.steampowered.com/</a>.
+      If Valve is unable to resolve your concerns and a dispute remains between you and Valve, this Section explains how the parties have agreed to resolve it.
+    </p>
+    <p>
+      For All Subscribers Outside the European Union and United Kingdom:
+    </p>
+    <p>
+      You and Valve agree that this Agreement shall be deemed to have been made and executed in the State of Washington, U.S.A., and Washington law, excluding conflict of laws principles and the Convention on Contracts for the International Sale of Goods, governs all disputes and claims arising out of or relating to: (i) any aspect of the relationship between us;
+      (ii) this Agreement; or (iii) your use of Steam, your Account or the Content and Services.
+      You and Valve agree that all disputes and claims between you and Valve (including any dispute or claim that arose before the existence of this or any prior agreement) shall be commenced and maintained exclusively in any state or federal court located in King County, Washington, having subject matter jurisdiction.
+      You and Valve hereby consent to the exclusive jurisdiction of such courts and waive any objections as to personal jurisdiction or venue in such courts.
+    </p>
+    <p>
+      If the laws where you live mandate alternative dispute resolution options, you may seek a remedy under those options.
+      If you are a consumer who lives in Russia, you may also seek a remedy with local Russian state courts.
+    </p>
+    <p>
+      For EU and UK Subscribers:
+    </p>
+    <p>
+      This Agreement is governed by the law of the country where you have your habitual residence.
+    </p>
+    <p>In the event of a dispute relating to the interpretation, the performance or the validity of the Subscriber Agreement, an amicable solution may be sought before any legal action.
+      You can file your complaint at <a style="text-decoration:underline;" href="http://help.steampowered.com">http://help.steampowered.com</a>.
+
+      <a name="11"></a>
+    </p>
+    <p>11.
+MISCELLANEOUS<a href="#0" style="text-decoration: none;">
+        <small style="color: #666;">
+          ⏶
+        </small>
+      </a>
+    </p>
+    <p>
+      In the event that any provision of this Agreement is held by a court to be invalid or unenforceable, such provision will be deemed severable and the remaining provisions of this Agreement shall remain in full force and effect.
+    </p>
+    <p>
+      This Agreement, including any Subscription Terms, Rules of Use, the Valve Privacy Policy, and the Valve Hardware Limited Warranty Policy, constitutes and contains the entire agreement between the parties with respect to the subject matter hereof and supersedes any prior oral or written agreements.
+      You agree that this Agreement is not intended to confer and does not confer any rights or remedies upon any person other than the parties to this Agreement.
+    </p>
+    <p>
+      Valve’s obligations are subject to existing laws and legal process and Valve may comply with law enforcement or regulatory requests or requirements notwithstanding any contrary term.
+    </p>
+    <p>
+      You agree to comply with all applicable import/export laws and regulations.
+      You agree not to export the Content and Services or Hardware or allow use of your Account by individuals of any terrorist supporting countries to which encryption exports are at the time of exportation restricted by the U.S. Bureau of Export Administration.
+      You represent and warrant that you are not located in, under the control of, or a national or resident of any such prohibited country.
+    </p>
+    <p>
+      This Agreement was last updated on September 18, 2025 ("Revision Date").
+      If you were a Subscriber before the Revision Date, it replaces and supersedes your existing agreement with Valve or Valve SARL on the day that it becomes effective according to Section 8 above.
+    </p>
+</div>
+
+
+<label class="agreement-label">
+<input type="checkbox" id="agreementCheckbox"> I am 13 years of age or older and agree to the terms of the <a href="#">Steam Subscriber Agreement</a> an the <a href="#">Valve Privacy Policy</a>
+</label>
+</div>
+
+<div class="continue">
+<a href="createacc.html" class="continuespan" id="continueBtn"><span>Continue</span></a>
+</div>
+
+</form>
+
+</div>
+
+
+</div>
+</div>
+
+
+	
+
+<footer>
+
+<div class="footer-content">
+
+<div class="line"></div>
+
+<div id="footer-logo-steam">
+<img src="../photos/logo_steam_footer.png" alt="steam logo">
+</div>
+<img src="../photos/footerLogo_valve_new.png" alt="valve">
+
+<div class="footer-text">
+© 2025 Valve Corporation.  All rights reserved.  All trademarks are property of their respective owners in the US and other countries.
+</div>
+
+<div class="footer-text">
+VAT included in all prices where applicable.  
+ &nbsp;  
+<a href="#" target="_blank" rel="">Privacy Policy</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+ <a href="#" target="_blank" rel="">Legal</a>         
+ &nbsp;             
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Accessibility</a>         
+&nbsp;             
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Steam Subscriber Agreement</a>         
+&nbsp;             
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Refunds</a>         
+&nbsp;             
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Cookies</a>         
+&nbsp;             
+
+
+</div>
+
+<div class="line"></div>
+
+<div class="footer-valve-links">
+
+<a href="#" target="_blank" rel="">About Valve</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Jobs</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Steamworks</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Steam Distribution</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">Support</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">Giftcards</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+&nbsp;
+
+<a href="#" target="_blank" rel="">
+<img src="../photos/ico_facebook.png">
+</a>
+&nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+ <a href="#" target="_blank" rel="">
+<img src="../photos/ico_twitter.png">
+</a>
+ &nbsp;
+<span aria-hidden="true">|</span>
+ &nbsp;
+
+<a href="#" target="_blank" rel="">
+<img src="../photos/ico_bsky.png">
+</a>
+ &nbsp;
+
+
+
+
+</div>
+
+</div>
+
+
+
+</footer>
+
+<!-- Popup div -->
+<div class="popup login-popup" id="popup">
+<div class="popup-content">
+<div class="popup-icon">⚠️</div>
+<p class="popup-message"></p>
+<button class="popup-btn" onclick="closePopup()">OK</button>
+</div>
+</div>
+
+<!-- Age verification popup -->
+<div class="age-popup" id="agePopup" style="display: none;">
+<div class="age-popup-content">
+<h2>Please tell us your age</h2>
+<div class="age-buttons">
+<button id="under15Btn">I am under 15 years of age</button>
+<button id="over15Btn">I am 15 years of age or older</button>
+</div>
+<p class="age-note">This information is only used for account creation and is not saved.</p>
+</div>
+</div>
+
+</body>		
+</html>
