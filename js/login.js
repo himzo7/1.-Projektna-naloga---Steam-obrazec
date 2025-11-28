@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
             showLoginPopup("Login successful!", "success");
 
             setTimeout(() => {
-                window.location.href = "https://store.steampowered.com/";
+                window.open("https://store.steampowered.com/" , "_blank");
             }, 1000);
 
         } else {
