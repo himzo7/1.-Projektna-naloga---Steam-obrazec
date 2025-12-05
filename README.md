@@ -24,19 +24,19 @@ You can try the project directly by clicking this link: [Steam Replica Demo](htt
 
 ## Setup and Usage
 
-1. **Clone the Repo**:
+**1. Clone the Repo**:
 git clone https://github.com/himzo7/Steam-Signin-Signup-Form-Replica.git
 cd Steam-Signin-Signup-Form-Replica
 
 
-2. **Run Locally**:
+**2. Run Locally**:
 - Open `index.html` in any browser (e.g., Chrome).
 - For better testing, use a local server:
   - VS Code: Install Live Server extension and right-click `index.html` > Open with Live Server.
   - Python: Run `python -m http.server 8000` and open http://localhost:8000.
   - Node: Install serve with `npm i -g serve` and run `serve .`.
 
-3. **How to Use**:
+**3. How to Use**:
 - Start at `index.html`: Click the button to go to login.
 - Login (`sites/login.html`): Enter **Username: testuser** and **Password: 12345** to be redirected to original Steam page.
 - Register (`sites/register.html`): Fill email, confirm, select country, agree to terms. Age popup appears—choose 15+ to proceed.
